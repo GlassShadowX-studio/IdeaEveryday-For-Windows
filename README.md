@@ -1,2 +1,7 @@
-# IdeaEveryday For Windows
-"IdeaEveryday"是一款现代风格的灵感记录软件,支持多种视图查看与记录每一刻您的灵感
+# Tauri + React
+
+This template should help get you started developing with Tauri and React in Vite.
+
+## Recommended IDE Setup
+
+- [VS Code](https://code.visualstudio.com/) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <meta
+      name="description"
+      content="IdeaEveryday — 记录每一个突然想到的想法，勾选已实现的，30 天后自动清理。"
+    />
+    <title>IdeaEveryday · 想法记录</title>
+    <!-- 防止主题闪烁：在首次绘制前应用已存储的主题 -->
+    <script>
+      ;(function () {
+        try {
+          var stored = localStorage.getItem("theme")
+          var theme =
+            stored === "light" || stored === "dark"
+              ? stored
+              : window.matchMedia("(prefers-color-scheme: dark)").matches
+                ? "dark"
+                : "light"
+          document.documentElement.classList.add(theme)
+        } catch (e) {
+          document.documentElement.classList.add("light")
+        }
+      })()
+    </script>
+    <!-- 静态资源：图标库 + 动画库（按绝对路径 /resources/ 引入 -->
+    <script defer src="./resources/lucide.min.js"></script>
+    <script defer src="./resources/gsap.min.js"></script>
+    <script type="module" crossorigin src="./assets/index-BbTiD5qg.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-BvS6vgzh.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
